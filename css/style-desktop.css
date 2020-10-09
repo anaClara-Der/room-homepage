@@ -1,0 +1,106 @@
+@media (min-width: 1124px) {
+  body {
+    overflow: hidden;
+  }
+  /*contenedor general de la primera parte*/
+  #cont-uno-movil {
+    display: none;
+  }
+  #cont-uno-desktop {
+    display: flex;
+    width: 100vw;
+    height: 65vh;
+  }
+  .imagenes-desktop:first-child {
+    display: flex;
+  }
+  /*nav*/
+  .desktop-menu-imagenes {
+    position: relative;
+    width: 150%;
+    height: 100%;
+  }
+  .imagen-desktop {
+    width: 100%;
+  }
+  .desktop-menu {
+    position: absolute;
+    margin: 35px 0px 55px 60px;
+    display: flex;
+    align-items: center;
+  }
+  .ul-desktop {
+    display: flex;
+  }
+  .ul-desktop li {
+    list-style: none;
+    padding: 15px;
+    color: var(--white);
+  }
+  .ul-desktop li:first-child {
+    margin-left: 25px;
+  }
+  li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 12px;
+  }
+  li a:hover {
+    border-bottom: solid 3px var(--white);
+    padding-bottom: 5px;
+  }
+  /*imagenes*/
+  .imagenes-desktop {
+    display: none;
+  }
+  .cont-desktop-fotos {
+    height: 100%;
+  }
+  .imagenes-desktop {
+    height: 100%;
+  }
+  .imagen-desktop {
+    height: 100%;
+  }
+  /*contenedor de texto*/
+  .cont-desktop-presentacion {
+    position: relative;
+  }
+  span:hover {
+    color: var(--dark-gray);
+  }
+  .flechas {
+    position: absolute;
+    bottom: 0px;
+    width: 30%;
+    cursor: pointer;
+    left: 0px;
+  }
+  .flechas button {
+    background-color: var(--black);
+    border: none;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s;
+    outline: none;
+    cursor: pointer;
+  }
+  .flechas button:hover {
+    background-color: var(--very-darkGray);
+    border: none;
+  }
+  .desktop-texto {
+    width: 70%;
+    margin: 60px auto 0px auto;
+  }
+  /*Sección de abajo*/
+  #cont-dos {
+    display: flex;
+    margin: 0px;
+    width: 100vw;
+    height: 35vh;
+  }
+  .cont-dos-imagen {
+    width: 33%;
+  }
+}

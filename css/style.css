@@ -1,0 +1,142 @@
+:root {
+  --dark-gray: hsl(0, 0%, 63%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --very-darkGray: hsl(0, 0%, 27%);
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+p {
+  font-size: 12px;
+}
+#cont-uno-desktop {
+  display: none;
+}
+/*carrusel de imágenes*/
+#cont-imagenes-movil {
+  position: relative;
+}
+.imagenes {
+  width: 100%;
+  display: none;
+}
+.imagenes:first-child {
+  display: flex;
+}
+.imagen {
+  width: 100vw;
+}
+.logo {
+  position: absolute;
+  z-index: 1;
+  left: 45%;
+  top: 5%;
+}
+/*Menu desplegable*/
+.movil-menu {
+  position: absolute;
+  z-index: 1;
+  left: 10%;
+  top: 5%;
+}
+#movil-menu-abierto{
+  display: none;
+  align-items: flex-start;
+  position:absolute;
+  z-index: 1;
+  background-color: var(--white);
+  height: 70px;
+  width: 100vw;
+}
+.ul-menu-movil{
+  display: flex;
+  margin: 10px 5px 0px 5px ;
+}
+.movil-cerrar-menu{
+margin: 10px 30px 0px 20px;
+}
+.ul-menu-movil li{
+  list-style: none;
+  margin: 0px 10px 0px 10px;
+}
+.ul-menu-movil a{
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--black);
+}
+.flechas {
+  background-color: var(--black);
+  width: 35%;
+  height: 60px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  bottom: 60px;
+  left: 60vw;
+}
+.flechas button {
+  background-color: var(--black);
+  border: none;
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+.flechas button:active {
+  background-color: var(--very-darkGray);
+  border: none;
+}
+/*Texto de shop now*/
+.cont-texto {
+  padding: 10px 30px;
+}
+h1 {
+  margin-bottom: 15px;
+}
+.texto-presentacion {
+  margin-bottom: 50px;
+  line-height: 20px;
+}
+.shop-now-texto,
+.shop-now-flecha {
+  cursor: pointer;
+}
+.shop-now-texto {
+  margin-right: 30px;
+  letter-spacing: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+/*Contenido dos*/
+#cont-dos {
+  margin: 50px 0px;
+}
+.cont-dos-imagen {
+  width: 100vw;
+}
+.cont-dos-texto {
+  padding: 50px 30px;
+}
+h2 {
+  font-size: 12px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.cont-dos-parrafo {
+  line-height: 20px;
+}
+/*Atribución*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
